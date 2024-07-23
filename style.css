@@ -51,6 +51,10 @@ body {
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 .footer {
@@ -70,21 +74,24 @@ body {
 }
 
 .options ul li{
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: 1px solid grey;
     line-height: 2.5;
-    opacity: 0.8;
+    color: grey;
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .options ul li:hover{
     opacity: 1;
     color: grey;
+    font-weight: 500;
 }
 
 .options ul li i{
     padding: 0 2rem 0 4rem;
     width: 16px;
     height: 16px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .options ul li i:hover{
@@ -129,13 +136,16 @@ body {
 
 .profile img{
     height: 40px;
+    margin: 6px;
     width: 40px;
+    margin-right: 1rem;
     border-radius: .5rem;
 }
 
 .notifications{
     height: 40px;
     border-radius: .5rem;
+    margin: 6px;
     width: 40px;
     background-color: white;
 }
@@ -148,7 +158,33 @@ body {
 }
 
 .welcome{
-    top: 0;
     line-height: .3;
-    padding-left: 2rem;
+    padding-left: 1rem;
+}
+
+.search-container{
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.search-container form{
+    padding: 8px;
+    border: none;
+    min-width: 280px;
+}
+
+.search-container form input{
+    background-color: white;
+    border: none;
+    padding: 5px;
+    min-width: 380px;
+}
+
+.search-container form button{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
 }
