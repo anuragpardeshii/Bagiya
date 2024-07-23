@@ -14,8 +14,10 @@ body {
 }
 
 .sidebar {
-    width: 300px;
+    width: 280px;
     display: flex;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
 }
 
@@ -24,12 +26,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .logo p {
     font-size: 1.5rem;
     color: #c0f497;
-    color: rgb(158, 235, 71);
+    color: #9eeb47;
     padding: 0;
     padding-top: 5px;
     margin-left: 5px;
@@ -41,9 +44,8 @@ body {
 }
 
 .main-content {
-    background-color: #fcfcfc;
+    background-color: #f6f6f6;
     flex: 1;
-    padding: 1rem;
     overflow: auto;
 }
 
@@ -52,6 +54,101 @@ body {
 }
 
 .footer {
-    background-color: #c0f497;
+    background-color: #9eeb47;
     bottom: 0;
+}
+
+.options ul{
+    list-style-type: none;
+    color: #bbbbbb;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.options ul li{
+    border-bottom: 1px solid #bbbbbb;
+    line-height: 2.5;
+    opacity: 0.8;
+}
+
+.options ul li:hover{
+    opacity: 1;
+    color: grey;
+}
+
+.options ul li i{
+    padding: 0 2rem 0 4rem;
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+}
+
+.options ul li i:hover{
+    opacity: 1;
+}
+
+.help-center{
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5rem;
+    margin: auto;
+    padding: auto;
+    background-image: url(./images/download.png);
+    background-size: contain;
+
+}
+
+.help-center h1{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.help-center p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 24px;
+    border-radius: .5rem;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: .5rem;
+}
+
+.notifications{
+    height: 40px;
+    border-radius: .5rem;
+    width: 40px;
+    background-color: white;
+}
+
+.notifications i{
+    font-size: 28px;
+    color: #9eeb47;
+    text-align: center;
+    padding: 6px;
+}
+
+.welcome{
+    top: 0;
+    line-height: .3;
+    padding-left: 2rem;
 }
