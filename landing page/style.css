@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: #f6f6f6;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    height: 35px;
+}
+
+.navbar .logo p{
+    color: #0e9342;
+    font-weight: 700;
+}
+
+.headings{
+    justify-content: end;
+}
+
+.main-content{
+    background-color: #0e9342;
+    height: 93vh;
+}
+
+.main-content p{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
