@@ -188,3 +188,13 @@ body {
     border: none;
     font-size: 1rem;
 }
+
+.container{
+    background-color: #9eeb47;
+}
+
+.container img{
+    width: 540px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
