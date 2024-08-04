@@ -1,206 +1,201 @@
-body {
-    font-family: "Montserrat", sans-serif; 
-    overflow: hidden;
+body{
     margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
-.main {
-    display:flex;
-    height: 100vh;
-}
-
-.unknown{
-    background-color: #FBFFF4;
-}
-
-.sidebar {
-    width: 280px;
+.navbar{
     display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-}
-
-
-.logo {
-    display: flex;
+    flex-direction: row;
+    height: 60px;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
 }
 
-.logo p {
-    font-size: 1.5rem;
-    color: #c0f497;
-    color: #9eeb47;
-    color: #0e9342;
-    color: #7bbf39;
-    padding: 0;
-    padding-top: 5px;
-    margin-left: 5px;
-    font-weight: 700;
+.navbar input{
+    background-color: #7bbf39;
+    border: 0px solid;
+    width: 340px;
+}
+
+.search-bar{
+    background-color: #7bbf39;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem 1.2rem 1.5rem 1.2rem;
+}
+
+.new-btn{
+    background-color: #7bbf39;
+    padding: .6rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.headings a{
+    margin: .5rem;
+}
+
+.search-bar button{
+    background-color: #7bbf39;
+    border: 0px solid;
+    color: white;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo img{
     height: 35px;
+    margin-left: 4rem;
 }
 
-.main-content {
-    background-color: #f6f6f6;
-    flex: 1;
-    overflow: auto;
+.navbar .logo p{
+    color: #7bbf39;
+    font-weight: 700;
 }
 
-.header {
+.headings{
+    justify-content: end;
+    padding-right: 2rem;
+}
+
+.main-content{
+    background-color: #7bbf39;
+    padding: 1.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content h3{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.front-page{
+    display: flex;
+}
+
+.column{
+    width: 40%;
+    height: 100vh;
+    z-index: 20;
+    background-color: white;
+}
+
+.column .content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 2rem;
+    max-width: 480px;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    text-align: center;
 }
 
-.footer {
-    background-color: #9eeb47;
-    background-color: #0e9342;
-    background-color: #7bbf39;
-    bottom: 0;
-}
-
-.options ul{
-    list-style-type: none;
-    color: #bbbbbb;
-    font-size: 1rem;
+.column h3{
+    color: #7bbf39;
+    font-weight: 800;
+    text-align: justify;
     margin: 0;
+    font-size: 3.5rem;
+}
+
+.column h4{
+    font-weight: 300;
+    margin: 0;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.column .content .adv{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+}
+.column .content .adv img{
+    height: 9rem;
+}
+
+.column2{
+    width: 60%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.waves img{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    width: min-content;
+    height: 100vh;
+}
+
+.column2 img{
+    width: 100%;
+    overflow: hidden;
     padding: 0;
+    z-index: 6;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 30%;
+    margin: 0;
 }
 
-.options ul li{
-    border-bottom: 1px solid grey;
-    line-height: 2.5;
-    color: grey;
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.options ul li:hover{
-    opacity: 1;
-    color: grey;
-    font-weight: 500;
-}
-
-.options ul li i{
-    padding: 0 2rem 0 4rem;
-    width: 16px;
-    height: 16px;
-    opacity: 0.9;
-}
-
-.options ul li i:hover{
-    opacity: 1;
-}
-
-.help-center{
-    max-width: 240px;
+.stages {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: .5rem;
+    padding-top: 1rem;
     margin: auto;
-    padding: auto;
-    background-image: url(./images/download.png);
-    background-size: contain;
-
-}
-
-.help-center h1{
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.help-center p{
-    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     color: white;
-    font-size: 1rem;
 }
 
-.button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px 24px;
-    border-radius: .5rem;
-    text-align: center;
+.stages img{
+    height: 12rem;
+    width: 12rem;
     margin: auto;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-.profile img{
-    height: 40px;
-    margin: 6px;
-    width: 40px;
-    margin-right: 1rem;
-    border-radius: .5rem;
 }
 
-.notifications{
-    height: 40px;
-    border-radius: .5rem;
-    margin: 6px;
-    width: 40px;
-    background-color: white;
+.stage-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    text-align: center;
 }
 
-.notifications i{
-    font-size: 28px;
-    color: #9eeb47;
+.bagiya{
+    display: flex;
+    padding: 2rem;
+}
+
+.divide-col{
+    margin: auto;
+}
+
+.divide-col img{
+    width: 45rem;
+}
+
+.divide-col h3{
+    font-size: 2rem;
     color: #7bbf39;
     text-align: center;
-    padding: 6px;
-}
-
-.welcome{
-    line-height: .3;
-    padding-left: 1rem;
-}
-
-.search-container{
-    margin-left: auto;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-    border-radius: .5rem;
-}
-
-.search-container form{
-    padding: 8px;
-    border: none;
-    min-width: 280px;
-}
-
-.search-container form input{
-    background-color: white;
-    border: none;
-    padding: 5px;
-    min-width: 380px;
-}
-
-.search-container form button{
-    background-color: white;
-    border: none;
-    font-size: 1rem;
-}
-
-.container{
-    background-color: #9eeb47;
-    background-color: #f8f9fb;
-}
-
-.container img{
-    width: 540px;
-    border-radius: 1rem;
-    margin: 1rem;
 }
