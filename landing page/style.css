@@ -31,12 +31,16 @@ body{
 }
 
 .new-btn{
-    background-color: white;
-    padding: .5rem;
+    background-color: #7bbf39;
+    padding: .6rem;
     border-radius: 1.2rem;
     text-decoration: none;
-    color: #7bbf39;
+    color: white;
     font-weight: 600;
+}
+
+.headings a{
+    margin: .5rem;
 }
 
 .search-bar button{
@@ -64,6 +68,7 @@ body{
 
 .headings{
     justify-content: end;
+    padding-right: 2rem;
 }
 
 .main-content{
