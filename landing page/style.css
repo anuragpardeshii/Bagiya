@@ -6,7 +6,7 @@ body{
 .navbar{
     display: flex;
     flex-direction: row;
-    height: 50px;
+    height: 60px;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
@@ -17,6 +17,34 @@ body{
     left: 0;
 }
 
+.navbar input{
+    background-color: #7bbf39;
+    border: 0px solid;
+    width: 340px;
+}
+
+.search-bar{
+    background-color: #7bbf39;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem 1.2rem 1.5rem 1.2rem;
+}
+
+.new-btn{
+    background-color: white;
+    padding: .5rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    color: #7bbf39;
+    font-weight: 600;
+}
+
+.search-bar button{
+    background-color: #7bbf39;
+    border: 0px solid;
+    color: white;
+}
+
 .navbar .logo{
     display: flex;
     justify-content: start;
@@ -25,7 +53,8 @@ body{
 }
 
 .logo img{
-    height: 30px;
+    height: 35px;
+    margin-left: 4rem;
 }
 
 .navbar .logo p{
@@ -144,5 +173,24 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 290px;
+    text-align: center;
+}
+
+.bagiya{
+    display: flex;
+    padding: 2rem;
+}
+
+.divide-col{
+    margin: auto;
+}
+
+.divide-col img{
+    width: 45rem;
+}
+
+.divide-col h3{
+    font-size: 2rem;
+    color: #7bbf39;
     text-align: center;
 }
