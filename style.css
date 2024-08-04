@@ -34,6 +34,7 @@ body {
     color: #c0f497;
     color: #9eeb47;
     color: #0e9342;
+    color: #7bbf39;
     padding: 0;
     padding-top: 5px;
     margin-left: 5px;
@@ -61,6 +62,7 @@ body {
 .footer {
     background-color: #9eeb47;
     background-color: #0e9342;
+    background-color: #7bbf39;
     bottom: 0;
 }
 
@@ -155,7 +157,7 @@ body {
 .notifications i{
     font-size: 28px;
     color: #9eeb47;
-    color: #0e9342;
+    color: #7bbf39;
     text-align: center;
     padding: 6px;
 }
@@ -194,7 +196,7 @@ body {
 
 .container{
     background-color: #9eeb47;
-    background-color: #0e9342;
+    background-color: #f8f9fb;
 }
 
 .container img{
