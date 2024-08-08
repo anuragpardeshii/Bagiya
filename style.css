@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
@@ -82,7 +82,7 @@ body{
 }
 
 .main-content{
-    background-color: #84d232;
+    background-color: var(--dark-green2);
     padding: 1.5rem 3rem;
     display: flex;
     flex-direction: column;
@@ -102,6 +102,7 @@ body{
 .column{
     width: 40%;
     height: 100vh;
+    object-fit: contain;
     z-index: 20;
     background-color: white;
 }
@@ -113,7 +114,7 @@ body{
     flex-direction: column;
     gap: 24px;
     margin-top: 2rem;
-    max-width: 480px;
+    max-width: 560px;
     height: 100%;
     object-fit: contain;
     margin: auto;
@@ -121,26 +122,24 @@ body{
 }
 
 .column h3{
-    color: var(--dark-green);
+    color: var(--dark-green2);
     font-weight: 800;
-    text-align: justify;
     margin: 0;
     font-size: 3.5rem;
 }
 
 .column h4{
-    color: var(--light-green);
+    color: var(--light-greenp);
     margin: 0;
-    text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .column .content .adv{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .column .content .adv img{
-    height: 9rem;
+    height: 7rem;
 }
 
 .column2{
@@ -193,9 +192,18 @@ body{
     text-align: center;
 }
 
+.uses{
+    display: flex;
+    background-color: var(--dark-green2);
+}
+
+.uses .divide-col h3{
+    color: var(--white);
+}
 
 .bagiya{
     display: flex;
+    background-color: #f0f1be;
     padding: 2rem;
 }
 
@@ -209,6 +217,10 @@ body{
 
 .divide-col h3{
     font-size: 2rem;
-    color: #7bbf39;
+    color: var(--dark-green2);
     text-align: center;
+}
+
+.lpi{
+    height: 18rem;
 }
