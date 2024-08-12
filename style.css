@@ -70,16 +70,6 @@ body{
     color: white;
 }
 
-.logo img{
-    height: 55px;
-    margin-left: 4rem;
-}
-
-.navbar .logo p{
-    color: var(--dark-green2);
-    font-weight: 700;
-}
-
 .headings{
     justify-content: end;
     padding-right: 2rem;
@@ -382,4 +372,157 @@ body{
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Dashboard Styling Starts here */
+.main {
+    display:flex;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Sidebar content */
+.sideBar {
+    width: 280px;
+    display: flex;
+    border-radius: .5rem;
+    margin: .5rem;
+    background-color: var(--dark-green2);
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+}
+
+.options ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options ul li{
+    color: white;
+    min-width: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options p{
+    margin: 0;
+}
+
+.options ul li:hover{
+    color: var(--light-greenp);
+    font-weight: 500;
+}
+
+.options ul li i{
+    padding: 1rem;
+    min-width: 4rem;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo img{
+    height: 9rem;
+}
+
+.dash-content {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: .5rem;
+    height: 10vh;
+    background-color: #f6f6f6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .5rem;
+}
+
+.profile{
+    cursor: pointer;
+}
+
+.profile img{
+    height: 40px;
+    margin: 6px;
+    width: 40px;
+    margin-right: 1rem;
+    border-radius: .5rem;
+}
+
+.notifications{
+    height: 40px;
+    border-radius: .5rem;
+    margin: 6px;
+    cursor: pointer;
+    width: 40px;
+    background-color: white;
+}
+
+.notifications i{
+    font-size: 28px;
+    color: var(--dark-green2);
+    text-align: center;
+    padding: 6px;
+}
+
+.welcome{
+    line-height: .3;
+}
+
+
+.search-container{
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.search-container form{
+    padding: 8px;
+    border: none;
+    min-width: 280px;
+}
+
+.search-container form input{
+    background-color: white;
+    border: none;
+    padding: 5px;
+    min-width: 380px;
+}
+
+.search-container form button{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+.dash-container{
+    background-color: #f6f6f6;
+    border-radius: .5rem;
+    height: 90vh;
+    padding: 1rem;
+    margin: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .5rem;
 }
