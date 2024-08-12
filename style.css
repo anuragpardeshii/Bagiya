@@ -304,7 +304,7 @@ body{
 }
 
 .trees-stats {
-    background-image: url(/images/whitebg.jpg);
+    background-image: url(./images/whitebg.jpg);
     margin: auto;
     border-radius: .5rem;
     width: 80%;
