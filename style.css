@@ -189,11 +189,23 @@ body{
     padding: .5rem;
 }
 
+.stage-container:hover{
+    transform: scale(1.1); 
+    transition: 1.2s;
+}
+
 .stage-container{
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 300px;
+    padding: 1rem;
     text-align: center;
+}
+
+
+
+.stage-container p{
+    font-size: 1.2rem;
 }
 
 
@@ -317,9 +329,11 @@ body{
 .trees-stats h3{
     color: var(--dark-green2);   
   background: -webkit-linear-gradient(#366827, #4eb700);
-  -webkit-background-clip: text;
+   -webkit-background-clip: text;
+   background-clip: none;
   -webkit-text-fill-color: transparent;
 }
+
 .b-info{
     color: var(--dark-green2);
     display: flex;
@@ -328,8 +342,8 @@ body{
     align-items: center;
     justify-content: space-around;
     margin: 2rem auto;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
     flex-direction: row;
 }
 
